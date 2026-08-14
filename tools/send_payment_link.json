@@ -1,0 +1,17 @@
+{
+  "name": "send_payment_link",
+  "description": "Sends a secure payment link to a successfully authenticated customer when a payment link is requested or appropriate.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "customer_id": {
+        "type": "string",
+        "description": "The verified customer's account ID."
+      }
+    },
+    "required": [
+      "customer_id"
+    ],
+    "additionalProperties": false
+  }
+}

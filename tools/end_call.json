@@ -1,0 +1,25 @@
+{
+  "name": "end_call",
+  "description": "Ends the voice call after the customer has clearly indicated that the conversation is finished and the final disposition has been recorded.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "reason": {
+        "type": "string",
+        "enum": [
+          "CUSTOMER_FINISHED",
+          "GOODBYE",
+          "DO_NOT_CALL",
+          "WRONG_PERSON",
+          "ESCALATED",
+          "UNABLE_TO_VERIFY"
+        ],
+        "description": "The reason the voice call is being ended."
+      }
+    },
+    "required": [
+      "reason"
+    ],
+    "additionalProperties": false
+  }
+}

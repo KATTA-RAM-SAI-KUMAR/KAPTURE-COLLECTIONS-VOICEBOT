@@ -1,0 +1,32 @@
+{
+  "name": "mark_disposition",
+  "description": "Records the final outcome of the customer conversation before the call is completed.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "customer_id": {
+        "type": "string",
+        "description": "The customer's account ID."
+      },
+      "disposition": {
+        "type": "string",
+        "enum": [
+          "PTP_COMMITTED",
+          "ALREADY_PAID",
+          "DISPUTE",
+          "HARDSHIP",
+          "DO_NOT_CALL",
+          "WRONG_PERSON",
+          "CALLBACK_REQUESTED",
+          "ESCALATED"
+        ],
+        "description": "The final outcome of the customer interaction."
+      }
+    },
+    "required": [
+      "customer_id",
+      "disposition"
+    ],
+    "additionalProperties": false
+  }
+}

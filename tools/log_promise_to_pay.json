@@ -1,0 +1,27 @@
+{
+  "name": "log_promise_to_pay",
+  "description": "Records a confirmed customer Promise to Pay after the customer has explicitly confirmed the payment date and amount.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "customer_id": {
+        "type": "string",
+        "description": "The verified customer's account ID."
+      },
+      "promise_date": {
+        "type": "string",
+        "description": "The date on which the customer promises to make the payment, for example August 20."
+      },
+      "promise_amount": {
+        "type": "number",
+        "description": "The promised payment amount in Indian Rupees (INR)."
+      }
+    },
+    "required": [
+      "customer_id",
+      "promise_date",
+      "promise_amount"
+    ],
+    "additionalProperties": false
+  }
+}

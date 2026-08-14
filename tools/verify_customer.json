@@ -1,0 +1,22 @@
+{
+  "name": "verify_customer",
+  "description": "Verifies a customer's identity using their account ID and verification code. This must succeed before any sensitive loan or overdue EMI information is disclosed.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "customer_id": {
+        "type": "string",
+        "description": "The customer's account ID."
+      },
+      "verification_code": {
+        "type": "string",
+        "description": "The customer's verification code."
+      }
+    },
+    "required": [
+      "customer_id",
+      "verification_code"
+    ],
+    "additionalProperties": false
+  }
+}
