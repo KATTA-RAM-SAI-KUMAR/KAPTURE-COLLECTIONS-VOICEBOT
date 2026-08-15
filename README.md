@@ -736,12 +736,3 @@ Voice-agent demonstration
 
 The prototype focuses on practical implementation, explicit state control, safe customer handling, controlled tool execution, and clear separation between the AI conversation layer and business APIs.
 
-
-## After pasting — ONLY do this
-
-
-```powershell
-cd D:\Kapture-Collections-Voicebot
-git add README.md
-git commit -m "Finalize README"
-git push
